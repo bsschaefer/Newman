@@ -1,0 +1,693 @@
+{
+	"info": {
+		"_postman_id": "2fd9a6a1-73fa-486c-b3a7-ee757635f22c",
+		"name": "Focus Fiddlin' w/ Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28033247",
+		"_collection_link": "https://ccok-nexus-project.postman.co/workspace/Focus~9e5414dd-9ba9-4252-a92b-80249007ff98/collection/28033247-2fd9a6a1-73fa-486c-b3a7-ee757635f22c?action=share&source=collection_link&creator=28033247"
+	},
+	"item": [
+		{
+			"name": "SendTestEmail Copy",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"vgunasekaran@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/TenantSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"TenantSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product2",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": 1264,\r\n    \"productType\": \"Individual - HMO\",\r\n    \"hiosPlanId\": \"5322434234\",\r\n    \"productName\": \"ben test\",\r\n    \"productDesc\": \"add desc but more and more\\n\",\r\n    \"metalLevel\": \"Catastrophic\",\r\n    \"planType\": \"HMO\",\r\n    \"productBp\": \"id\",\r\n    \"productBu\": \"BY\",\r\n    \"productPg\": \"68\",\r\n    \"productRxRider\": \"MF23BA12\",\r\n    \"productRxMo\": \"M1\",\r\n    \"productIsDental\": \"1\",\r\n    \"variantDesc\": \"tbrtbetb\",\r\n    \"productSbcParam\": null,\r\n    \"productCrosswalk\": \"cross\",\r\n    \"productEffDate\": \"2024-10-01T00:00:00.000Z\",\r\n    \"productEndDate\": \"9999-12-12T00:00:00.000Z\",\r\n    \"planYear\": 2023,\r\n    \"productOfferOffExchange\": 1,\r\n    \"productOfferExchange\": 1,\r\n    \"productIsRateAvail\": 1,\r\n    \"productOnHold\": 0,\r\n    \"productInsureOkElig\": 0,\r\n    \"productChamberCareElig\": 1,\r\n    \"medicalPkgId\": 31,\r\n    \"rxPkgId\": 286,\r\n    \"formularyId\": null,\r\n    \"standardizedPlan\": false,\r\n    \"planStatus\": null,\r\n    \"finalCvsPlanCode\": null\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}api/services/app/Product/UpdateProduct",
+					"host": [
+						"{{base-uri}}api"
+					],
+					"path": [
+						"services",
+						"app",
+						"Product",
+						"UpdateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTestEmail Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailAddress\": \"bschaefer+1@ccok.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-uri}}/api/services/app/HostSettings/SendTestEmail",
+					"host": [
+						"{{base-uri}}"
+					],
+					"path": [
+						"api",
+						"services",
+						"app",
+						"HostSettings",
+						"SendTestEmail"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{access_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"",
+					"var getTokenRequest = {",
+					"    url: pm.environment.get(\"base-uri\") + \"/api/TokenAuth/Authenticate\",",
+					"    method: 'POST',",
+					"    header: {",
+					"        'Content-Type': 'application/json-patch+json',",
+					"    },",
+					"    body: {",
+					"        mode: 'raw',",
+					"        raw: {",
+					"",
+					"             \"userNameOrEmailAddress\":\"bschaefer+3@ccok.com\",",
+					"             \"password\":\"Test1234!\",",
+					"",
+					"            ",
+					"            //  \"userNameOrEmailAddress\":\"NEXUSEAPI_USER\",",
+					"            //  \"password\":\"U;gsqMQN6vk!X6\",",
+					"",
+					"            //\"userNameOrEmailAddress\":\"admin\",",
+					"            //\"password\":\"123qwe\",",
+					"",
+					"            // \"userNameOrEmailAddress\":\"admin\",",
+					"            // \"password\":\"CATCHorbit123!\",",
+					"            //",
+					"            // admin host settings privilege",
+					"            ",
+					"            // \"userNameOrEmailAddress\":\"benzfacc@fake.org\",",
+					"            // \"password\":\"Test1234!\",",
+					"            ",
+					"",
+					"",
+					"            \"rememberClient\":false,",
+					"            \"twoFactorRememberClientToken\":null,",
+					"            \"singleSignIn\":false,",
+					"            \"returnUrl\":null",
+					"        }",
+					"    }",
+					"};",
+					"",
+					"pm.sendRequest(getTokenRequest, function (err, res) {",
+					"    if (err === null) {",
+					"        console.log('Saving the token');",
+					"        var jsonData = res.json();",
+					"        console.log(jsonData);",
+					"",
+					"        pm.collectionVariables.set(\"access_token\",jsonData.result.accessToken);",
+					"    }",
+					"});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "access_token",
+			"value": ""
+		}
+	]
+}
